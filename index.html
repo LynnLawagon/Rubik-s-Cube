@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Rubik's Cube</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="canvas-container"></div>
+  <div class="stage-glow"></div>
+
+  <header>
+    <h1>Rubik's <span>Cube</span></h1>
+    <p>Solve with your keyboard, or drag a face to turn it. Drag empty space to look around.</p>
+  </header>
+
+  <div id="hud">
+    <div class="pill">Moves&nbsp;<b id="moveCount">0</b></div>
+    <div class="pill">Time&nbsp;<b id="timer">00:00</b></div>
+  </div>
+
+  <div id="legend">
+    <div class="legend-header">
+      <h3>KEYBOARD</h3>
+      <button id="legendHideBtn" title="Hide">Hide</button>
+    </div>
+    <div class="legend-row">
+      <div class="legend-keys"><kbd>U</kbd><kbd>D</kbd><kbd>L</kbd><kbd>R</kbd><kbd>F</kbd><kbd>B</kbd></div>
+      <div class="legend-label">Turn that face</div>
+    </div>
+    <div class="legend-row">
+      <div class="legend-keys"><kbd>M</kbd><kbd>E</kbd><kbd>S</kbd></div>
+      <div class="legend-label">Turn a middle slice</div>
+    </div>
+    <div class="legend-row">
+      <div class="legend-keys"><kbd>Shift</kbd></div>
+      <div class="legend-label">+ key turns it the other way</div>
+    </div>
+    <div class="legend-divider"></div>
+    <div class="legend-hint">Faces are named as if you're facing the cube: Up, Down, Left, Right, Front, Back.</div>
+  </div>
+
+  <button id="legendReopenBtn"><kbd>U</kbd><span>Keyboard shortcuts</span></button>
+
+  <div id="solvedBanner">
+    <h2>Solved! 🎉</h2>
+    <p id="solvedStats">0 moves · 00:00</p>
+  </div>
+
+  <div id="controls">
+    <button id="scrambleBtn">Scramble</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
