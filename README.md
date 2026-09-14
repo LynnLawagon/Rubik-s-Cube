@@ -10,8 +10,6 @@ A lightweight browser-based Rubik's Cube simulation built with HTML, CSS, and Ja
 - Move counter and timer
 - Auto-solved detection banner
 
-```
-
 ## Files
 
 - `index.html` – page structure
