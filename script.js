@@ -7,7 +7,7 @@
   const DRAG_THRESHOLD = 6;
   const ORBIT_SENS = 0.008;
 
-  const COLORS = { U:0xf5f2ea, D:0xf2c14e, F:0x3fae67, B:0x3f6fd6, R:0xd6432f, L:0xf07a20 };
+  const COLORS = { U:0xFFFFFF, D:0xFFD500, F:0x009B48, B:0x0045AD, R:0xB90000, L:0xFF5900 };
   const FACE_COLOR_KEY = { 'x+':'R', 'x-':'L', 'y+':'U', 'y-':'D', 'z+':'F', 'z-':'B' };
 
   // ---------- scene setup ----------
